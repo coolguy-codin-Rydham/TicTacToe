@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+	<title>
+		The Tic Tac Toe
+	</title>
+	<link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+	<style>
+		.square {
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			font-size: 2em;
+		}
+	</style>
+</head>
+
+<body class="bg-gray-400 h-screen flex 
+	justify-center items-center">
+	<div class="bg-white p-8 rounded-lg 
+		shadow-md max-w-md w-full">
+		<h1 class="text-3xl font-bold mb-3 text-center">
+			Tic Tac Toe
+		</h1>
+		<h3 class="text-1xl font-bold mb-3 text-center">
+			X will start first.
+		</h3>
+		<div class="grid grid-cols-3 gap-4 text-center">
+			<div class="square bg-gray-200"
+				onclick="handleClick(0)" id="0"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(1)" id="1"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(2)" id="2"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(3)" id="3"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(4)" id="4"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(5)" id="5"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(6)" id="6"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(7)" id="7"></div>
+			<div class="square bg-gray-200"
+				onclick="handleClick(8)" id="8"></div>
+		</div>
+		<div id="status" class="mt-6 text-gray-900 
+			text-center"></div>
+		<div class="flex justify-center mt-4">
+			<button onclick="restartGame()"
+				class="bg-blue-500 text-white py-2 px-4 rounded-md 
+				hover:bg-blue-600 focus:outline-none focus:ring-2 
+				focus:ring-blue-600 focus:ring-offset-2 transition 
+				duration-300 ease-in-out transform hover:scale-105">
+				Restart
+			</button>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
